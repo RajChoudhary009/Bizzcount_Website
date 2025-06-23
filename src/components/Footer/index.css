@@ -1,0 +1,153 @@
+.footer {
+  padding: 40px 20px;
+  font-family: sans-serif;
+  background-color: white;
+  color: #000;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text .logo-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo-text .logo-sub {
+  font-weight: bold;
+  font-size: 20px;
+  color: #0070f3;
+}
+
+.footer-nav-collum {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.footer-nav-collum a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.global-associates {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.office-section {
+  /* padding: 20px; */
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.office-section h3 {
+  color: #1e90ff;
+  margin-bottom: 10px;
+}
+
+.office-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.office-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+  text-align: left;
+}
+
+.office-links a:hover {
+  color: #1e90ff;
+  text-decoration: underline;
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.alignment-cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+}
+
+.modified-footer-top-subsection{
+  width: 30%;
+}
+
+.modified-footer-bottom-subsection{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px 0px;
+  width: 100%;
+  line-height: 2rem;
+}
+
+.modified-footer-bottom-subsection a {
+  text-decoration: none;
+  color: #000;
+}
