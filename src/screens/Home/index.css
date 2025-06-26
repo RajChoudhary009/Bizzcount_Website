@@ -600,7 +600,7 @@
   font-size: 16px;
   font-weight: bold;
   color: #0074e4;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding-left: 60px;
   text-align: left !important;
 }
@@ -647,7 +647,7 @@
 .list-link {
   text-decoration: none;
   color: #2c3e50;
-  font-size: 15px;
+  font-size: 22px;
   transition: color 0.3s ease;
 }
 

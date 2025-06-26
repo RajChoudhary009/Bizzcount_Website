@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import home2 from "../../Assets/images/home2.jpg"
+import home12 from "../../Assets/images/home12.jpg"
+import home11 from "../../Assets/images/home11.jpg"
 import logo from "../../Assets/images/logo.webp"
 // import Header from "../../components/Header";
 import "./index.css";
@@ -48,10 +49,10 @@ const AboutHeader = () => {
             </section>
 
             {/* content section */}
-            <section className="about-content">
+            <section className="about-content" >
                 <div className="about-text">
                     <h2 style={{ textAlign: "left" }}>About Us</h2>
-                    <p>
+                    <p style={{textAlign:"justify"}}>
                         At Bizzcount Solutions, we specialize in Corporate Finance, Financial
                         Management, and Corporate Tax, delivering expert guidance and strategic
                         solutions to meet your unique needs. Our team, composed of leading
@@ -76,8 +77,8 @@ const AboutHeader = () => {
                     <button className="read-more">READ MORE</button>
                 </div>
                 <div className="about-images">
-                    <img src={home2} style={{ width: "300px", height: "550px" }} alt="Workplace" />
-                    <img src={home2} style={{ width: "300px", height: "550px" }} alt="Teamwork" />
+                    <img src={home11} style={{ width: "300px", height: "550px" }} alt="Workplace" />
+                    <img src={home12} style={{ width: "300px", height: "550px" }} alt="Teamwork" />
                 </div>
             </section>
 

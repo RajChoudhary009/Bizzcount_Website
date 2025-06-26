@@ -89,7 +89,7 @@
   font-size: 16px;
   font-weight: 500;
   color: #212121;
-  text-align: left;
+  text-align: justify;
   line-height: 1.8;
 }
 
@@ -157,6 +157,11 @@
   text-align: left;
   background-color: #f6fcfd;
   padding: 20px;
+}
+
+.profile-details p {
+  text-align: justify;
+  font-size: 20px;
 }
 
 .profile-details h2 {

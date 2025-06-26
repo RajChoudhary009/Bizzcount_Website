@@ -48,7 +48,7 @@ const services = [
         description: [
             // 'Tax Planning & Risk Management',
             'Corporate Tax',
-            'Transfer Pricing & Cross border taxation',
+            'Transfer Pricing & Cross Border Taxation',
             // 'Cross-Border Taxation',
             'Indirect Tax',
         ],
@@ -96,17 +96,17 @@ const services = [
         title: 'Risk-Based Internal Audit',
         link: 'Risk-Based Internal Audit',
         description: [
-            // 'Forensic Accounting',
-            'Litigation Support',
+            'Forensic Audit',
+            'Internal Audit & Risk Advisory',
         ],
         image: require('../../Assets/images/home6.jpg'),
     },
 
     {
-        title: 'Financial Management',
-        link: 'Financial Management',
+        title: 'Financial Management & Business Entry Advisory',
+        link: 'Financial Management & Business Entry Advisory',
         description: [
-            'Reports and Control',
+            'Reporting and Controls',
             'Business Entry Advisory',
         ],
         image: require('../../Assets/images/home10.jpg'),
@@ -162,16 +162,18 @@ const Home = () => {
 
     return (
         <>
-            <header className="bga-header" style={{position: "fixed", top: 0, zIndex: 1000}}>
+            <header className="bga-header" style={{ position: "fixed", top: 0, zIndex: 1000 }}>
                 <div className="bga-container">
-                    <div className="bga-logo-section">
-                        {/* <img src={logo} alt="Blue Growth Advisors Logo" className="bga-logo" /> */}
-                        <img className="logo-image" src={logo} alt="BizzCount Logo" />
-                        <div className="bga-brand-text">
-                            <h1 className="bga-title">BIZZ<span className="bga-span" style={{ color: " #0a3258" }}>COUNT</span></h1>
-                            <h2 className="bga-subtitle" style={{ color: " #0a3258" }}>SOLUTIONS</h2>
+                    <Link to="/" target="_blank" style={{ textDecoration: "none" }}>
+                        <div className="bga-logo-section">
+                            {/* <img src={logo} alt="Blue Growth Advisors Logo" className="bga-logo" /> */}
+                            <img className="logo-image" src={logo} alt="BizzCount Logo" />
+                            <div className="bga-brand-text">
+                                <h1 className="bga-title">BIZZ<span className="bga-span" style={{ color: " #0a3258" }}>COUNT</span></h1>
+                                <h2 className="bga-subtitle" style={{ color: " #0a3258" }}>SOLUTIONS</h2>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
 
                     <nav className="bga-nav">
                         <ul className="bga-nav-links">
@@ -188,7 +190,7 @@ const Home = () => {
                 <marquee className="heding-bottom-description">Architects of Success, We transform vision into reality</marquee>
             </header>
 
-            <div className="custom-swiper-wrapper" style={{marginTop:"88px"}}>
+            <div className="custom-swiper-wrapper" style={{ marginTop: "88px" }}>
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
                     pagination={{ clickable: true }}
@@ -222,7 +224,7 @@ const Home = () => {
             <section className="bga-hero">
                 <div className="bga-hero-content">
                     <h1>
-                    Financial Clarity <span className="highlight-blue"> Meets Strategic</span> Growth
+                        Financial Clarity <span className="highlight-blue"> Meets Strategic</span> Growth
                     </h1>
                     <p className="subtext">
                         At Bizzcount Solutions, we help businesses make smarter decisions—whether navigating complex tax regulations or executing high-impact deals.
@@ -281,7 +283,7 @@ const Home = () => {
                 {services.map((service, index) => (
                     <div key={index} className="service-block">
                         <div className="service-content">
-                            <h3 className="service-title">{service.title}</h3>
+                            <h3 className="service-title" style={{ fontSize: "30px", marginBottom: "40px" }}>{service.title}</h3>
 
                             {Array.isArray(service.description) && (
                                 <ul className={service.title.toLowerCase().includes('1tax') ? 'checklist-style' : 'dotlist-style'}>
@@ -376,22 +378,24 @@ const Home = () => {
             <footer className="footer" ref={footerContainerRef}>
                 <div className="footer-top">
                     <div className="modified-footer-top-subsection">
-                        <div className="bga-logo-section">
-                            {/* <img src={logo} alt="Blue Growth Advisors Logo" className="bga-logo" /> */}
-                            <img className="logo-image" src={logo} alt="BizzCount Logo" />
-                            <div className="bga-brand-text">
-                                <h1 className="bga-title">BIZZ<span className="bga-span" style={{ color: " #0a3258" }}>COUNT</span></h1>
-                                <h2 className="bga-subtitle" style={{ color: " #0a3258" }}>SOLUTIONS</h2>
+                        <Link to="/" target="_blank" style={{ textDecoration: "none" }}>
+                            <div className="bga-logo-section">
+                                {/* <img src={logo} alt="Blue Growth Advisors Logo" className="bga-logo" /> */}
+                                <img className="logo-image" src={logo} alt="BizzCount Logo" />
+                                <div className="bga-brand-text">
+                                    <h1 className="bga-title">BIZZ<span className="bga-span" style={{ color: " #0a3258" }}>COUNT</span></h1>
+                                    <h2 className="bga-subtitle" style={{ color: " #0a3258" }}>SOLUTIONS</h2>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
 
                         <div className="modified-footer-bottom-subsection">
-                            <a href="#" style={{fontWeight:"700", color:"#1e90ff"}}> Contact Us:</a>
-                            <a href="#" style={{fontWeight:"700"}}> Corporate Office:</a>
-                            <a href="#" ><span style={{fontWeight:"700"}}>Address:</span> Bizzcount Solutions, - Office No. 2523A, Level 25, The H Hotel Office Tower, Trade Centre First, Sheikh Zayed Road, Dubai.</a>
-                            <a href="#" > <span style={{fontWeight:"700"}}>Phone:</span> +971-563096926</a>
-                            <a href="#" > <span style={{fontWeight:"700"}}>Land Line:</span> +971- 43050 829</a>
-                            <a href="#" > <span style={{fontWeight:"700"}}>Email:</span> info@bizzcountsolutions.com</a>
+                            <a href="#" style={{ fontWeight: "700", color: "#1e90ff" }}> Contact Us:</a>
+                            <a href="#" style={{ fontWeight: "700" }}> Corporate Office:</a>
+                            <a href="#" ><span style={{ fontWeight: "700" }}>Address:</span> Bizzcount Solutions, - Office No. 2523A, Level 25, The H Hotel Office Tower, Trade Centre First, Sheikh Zayed Road, Dubai.</a>
+                            <a href="#" > <span style={{ fontWeight: "700" }}>Phone:</span> +971-563096926</a>
+                            <a href="#" > <span style={{ fontWeight: "700" }}>Land Line:</span> +971- 43050 829</a>
+                            <a href="#" > <span style={{ fontWeight: "700" }}>Email:</span> info@bizzcountsolutions.com</a>
                         </div>
 
                     </div>
@@ -399,14 +403,14 @@ const Home = () => {
 
                     <nav className="footer-nav-collum">
                         <div className="office-section">
-                            <h3 style={{textAlign:"left"}}>Our Offices:</h3>
+                            <h3 style={{ textAlign: "left" }}>Our Offices:</h3>
                             <div className="office-links">
                                 <a href="#"> Dubai, UAE</a>
                                 <a href="#"> Delhi, India</a>
                                 {/* <a href="#"> Kerala, India</a> */}
                                 <a href="#"> Ahmedabad, India</a>
                                 <a href="#"> USA</a>
-                                <a href="/descoverycall" className="footer-call" style={{textDecoration:"none"}}>Schedule a Discovery Call</a>
+                                <a href="/descoverycall" className="footer-call" style={{ textDecoration: "none" }}>Schedule a Discovery Call</a>
                             </div>
                         </div>
                     </nav>

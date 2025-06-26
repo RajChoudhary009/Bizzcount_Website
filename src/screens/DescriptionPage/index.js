@@ -8,15 +8,15 @@ const servicesData = [
     title: 'Tax Advisory',
     description: `Our Tax Advisory service is focused on helping businesses navigate the complex world of taxation—ensuring compliance while optimizing tax efficiency. We support clients across various industries with tailored strategies that align with their business objectives.`,
     subSections: [
-      {
-        title: 'Tax Planning & Risk Management',
-        description: `Our approach:`,
-        bulletPoints: [
-          'Identifying and managing potential tax risks',
-          'Advising on dispute avoidance and resolution',
-          'Ensuring alignment with regulatory changes and business growth plans',
-        ],
-      },
+      // {
+      //   title: 'Tax Planning & Risk Management',
+      //   description: `Our approach:`,
+      //   bulletPoints: [
+      //     'Identifying and managing potential tax risks',
+      //     'Advising on dispute avoidance and resolution',
+      //     'Ensuring alignment with regulatory changes and business growth plans',
+      //   ],
+      // },
       {
         title: 'Corporate Tax',
         description: `Our services include:`,
@@ -30,10 +30,10 @@ const servicesData = [
       },
       {
         title: 'Transfer Pricing & Cross-Border Taxation',
-        description: `Transfer pricing documentation including local file and master file preparation:`,
+        // description: `Transfer pricing documentation including local file and master file preparation:`,
         bulletPoints: [
           // 'Transfer pricing policy design and documentation',
-          // 'Local file and master file preparation',
+          'Transfer pricing documentation including local file and master file preparation',
           'Benchmarking and economic analysis',
           'Drafting and reviewing intercompany agreements',
           'Double Tax Treaty Advisory',
@@ -131,17 +131,27 @@ const servicesData = [
 
   {
     title: 'Risk-Based Internal Audit',
-    description: `Risk-Based Internal Audit services are designed to enhance organizational resilience by proactively identifying and addressing internal control vulnerabilities. We conduct comprehensive risk assessments, gap analyses, and impact support informed decision-audit.`,
+    description: `Risk-Based Internal Audit services are designed to enhance organizational resilience by proactively identifying and addressing internal control vulnerabilities. We conduct comprehensive risk assessments, gap analyses, and impact quantification to build tailored strategies for risk mitigation.`,
 
     subSections: [
       {
-        title: 'Forensic Accounting',
+        title: 'Forensic Audit',
         description: `We specialize in uncovering financial discrepancies, misappropriations, and fraudulent activities. Our forensic accounting team conducts detailed analyses to:`,
         bulletPoints: [
           'Identify the individuals or processes involved',
           'Assess the methodologies used',
           'Quantify financial losses',
           'Compile admissible evidence for legal or internal action',
+        ],
+      },
+      {
+        title: 'Internal Audit & Risk Advisory',
+        description: `We support organizations in enhancing control frameworks, improving efficiency, and ensuring regulatory compliance. Our services include.`,
+        bulletPoints: [
+          'Internal Audit – Independent reviews to evaluate internal controls and governance.',
+          'SOP Development – Creating detailed Standard Operating Procedures.',
+          'Business Efficiency Reviews – Identifying operational inefficiencies and cost-saving opportunities.',
+          'Fixed Asset Management – Tagging, tracking, and verifying asset utilizati',
         ],
       },
     ],
@@ -155,7 +165,7 @@ const servicesData = [
 
     subSections: [
       {
-        title: 'Reports and Control',
+        title: 'Reporting and Controls',
         bulletPoints: [
           'Budgeting & Forecasting',
           'Cash Flow Management',
@@ -255,7 +265,7 @@ const ServiceDescription = () => {
                 </h2>
 
                 {service.description && (
-                  <p className="service-description">{service.description}</p>
+                  <p className="service-description">{service.description}1</p>
                 )}
 
                 {service.subSections.map((sub, subIndex) => {

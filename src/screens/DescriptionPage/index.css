@@ -69,7 +69,7 @@
   font-size: 15px;
   color: #333;
   margin-bottom: 18px;
-  text-align: center;
+  text-align: justify !important;
   line-height: 1.5;
 }
 
@@ -134,10 +134,10 @@
     flex: 1 1 100%;
   }
 
-  .service-title,
+  /* .service-title,
   .service-description {
-    text-align: left;
-  }
+    text-align: justify !important;
+  } */
 }
 
 /* .highlighted-subsection {
