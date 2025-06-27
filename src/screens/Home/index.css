@@ -1,9 +1,3 @@
-.home-container {
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-}
-
 .home-banner {
   width: 100%;
   height: 100%;
@@ -71,6 +65,51 @@
   cursor: pointer;
   border-radius: 4px;
 }
+
+/* ✅ Tablet screens */
+@media screen and (max-width: 992px) {
+  .slide-overlay {
+    top: 20%;
+    left: 15%;
+    width: 70%;
+    height: auto;
+    padding: 30px 10px;
+  }
+
+  .slide-overlay h1 {
+    font-size: 36px;
+  }
+
+  .slide-overlay h2 {
+    font-size: 18px;
+    width: 85%;
+  }
+}
+
+/* ✅ Mobile screens */
+@media screen and (max-width: 600px) {
+  .slide-overlay {
+    top: 22%;
+    left: 5%;
+    width: 90%;
+    padding: 20px 5px;
+  }
+
+  .slide-overlay h1 {
+    font-size: 28px;
+  }
+
+  .slide-overlay h2 {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .read-more-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
 
 /* Wrapper to hold buttons on top of Swiper */
 .custom-swiper-wrapper {
@@ -922,6 +961,10 @@
     font-size: 13px;
     line-height: 1.5;
   }
+
+  .list-item-style {
+    text-align: left !important;
+  }
 }
 
 
@@ -1099,7 +1142,6 @@
   margin-bottom: 15px;
   border: 2px solid #0074e4;
   border-radius: 100%;
-  /* margin-bottom: 3px; */
   gap: 20px;
 }
 
@@ -1116,6 +1158,7 @@
 
   .expect-list li {
     padding-left: 24px;
+    text-align: left;
   }
 }
 
@@ -1298,7 +1341,7 @@
 
 /* Popup */
 
-/* .popup-overlay {
+.popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1417,7 +1460,5 @@ button[type="submit"]:hover {
     opacity: 1;
     transform: scale(1) translateY(0);
   }
-} */
+} 
 
-
-/* slide second part */

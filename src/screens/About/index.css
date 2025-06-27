@@ -195,7 +195,11 @@
 
   .about-text,
   .about-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    margin-left: 20px;
   }
 
   .about-header h1 {
@@ -206,7 +210,8 @@
 @media (max-width: 768px) {
   .about-header .overlay {
     padding-left: 30px;
-    align-items: flex-start;
+    align-items: center;
+    width: 87%;
   }
 
   .about-header h1 {
@@ -232,6 +237,17 @@
 
   .profile-details {
     width: 100%;
+  }
+
+  .about-images img{
+    width: 400px !important;
+    margin-left: 20px !important;
+  }
+  .about-text{
+    width: 90%;
+  }
+  .overlay{
+    height: 440px !important;
   }
 }
 
