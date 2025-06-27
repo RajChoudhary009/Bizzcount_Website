@@ -5,6 +5,7 @@
   background-position: center;
   height: 480px;
   width: 100%;
+  object-fit: cover;
   position: relative;
 }
 
@@ -182,4 +183,78 @@
 .profile-details p strong {
   display: block;
   margin-top: 10px;
+}
+
+/* ========== Responsive Media Queries ========== */
+
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .about-text,
+  .about-images {
+    width: 100%;
+  }
+
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-header .overlay {
+    padding-left: 30px;
+    align-items: flex-start;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+
+  .profile-details p {
+    font-size: 16px;
+  }
+
+  .swati-profile {
+    padding: 20px;
+  }
+
+  .image-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .read-more {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .tax-expert-banner span {
+    font-size: 22px;
+  }
+
+  .about-images {
+    width: 80%;
+    object-fit: cover;
+  }
 }

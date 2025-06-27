@@ -218,7 +218,8 @@ const ServiceDescription = () => {
   return (
     <>
       {/* <Header /> */}
-      <header className="bga-header" style={{ position: "fixed", top: 0, zIndex: 1000 }}>
+      {/* <header className="bga-header" style={{ position: "fixed", top: 0, zIndex: 1000 }}> */}
+      <header className="bga-header">
         <div className="bga-container">
           <Link to="/" style={{ textDecoration: "none" }}>
             <div className="bga-logo-section">
@@ -265,7 +266,7 @@ const ServiceDescription = () => {
                 </h2>
 
                 {service.description && (
-                  <p className="service-description">{service.description}1</p>
+                  <p className="service-description">{service.description}</p>
                 )}
 
                 {service.subSections.map((sub, subIndex) => {

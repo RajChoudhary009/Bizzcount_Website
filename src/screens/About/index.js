@@ -11,7 +11,8 @@ const AboutHeader = () => {
     return (
         <>
             {/* <Header /> */}
-            <header className="bga-header" style={{ position: "fixed", top: 0, zIndex: 1000 }}>
+            {/* <header className="bga-header" style={{ position: "fixed", top: 0, zIndex: 1000 }}> */}
+            <header className="bga-header">
                 <div className="bga-container">
                     <Link to="/" style={{ textDecoration: "none" }}>
                         <div className="bga-logo-section">
@@ -52,7 +53,7 @@ const AboutHeader = () => {
             <section className="about-content" >
                 <div className="about-text">
                     <h2 style={{ textAlign: "left" }}>About Us</h2>
-                    <p style={{textAlign:"justify"}}>
+                    <p>
                         At Bizzcount Solutions, we specialize in Corporate Finance, Financial
                         Management, and Corporate Tax, delivering expert guidance and strategic
                         solutions to meet your unique needs. Our team, composed of leading

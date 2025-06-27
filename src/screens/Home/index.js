@@ -162,7 +162,8 @@ const Home = () => {
 
     return (
         <>
-            <header className="bga-header" style={{ position: "fixed", top: 0, zIndex: 1000 }}>
+            {/* <header className="bga-header" style={{ position: "fixed", top: 0, zIndex: 1000 }}> */}
+            <header className="bga-header">
                 <div className="bga-container">
                     <Link to="/" target="_blank" style={{ textDecoration: "none" }}>
                         <div className="bga-logo-section">
